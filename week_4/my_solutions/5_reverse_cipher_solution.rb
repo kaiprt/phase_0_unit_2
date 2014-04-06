@@ -33,14 +33,20 @@ end
 
 # Questions:
 # 1. What is the .to_a method doing?
+# => "To Array" (Converts object into an array.)
 # 2. How does the rotate method work? What does it work on?
+# => Returns a new array by rotating so the number in the argument is the first element.
 # 3. What is `each_char` doing?
+# => Passes each character in the string through the block.
 # 4. What does `sample` do?
+# => Chooses a random element from the array.
 # 5. Are there any other methods you want to understand better?
+# => Yes all of them! :)
 # 6. Does this code look better or worse than your refactored solution
 #    of the original cipher code? What's better? What's worse?
+# => It's roughly the same as what we did. But this is better because of the use of more specific methods.
 # 7. Is this good code? What makes it good? What makes it bad?
-
+# => In my opinion this is good code. Code is only repeated when needed, indentation is good along with spacing and syntax.
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
 # Does this return the same thing every time?
@@ -54,4 +60,7 @@ p translate_to_cipher("I want cookies")
 
 
 # 5. Reflection 
-
+=begin
+I learned a couple new tricks in this challenge (.rotate, .sample, .each_char, and .zip). Answering the questions forced me to confirm my knowledge on the subject.
+I felt confident explaining the code, researching methods, and determining if a code is good or bad.
+=end
