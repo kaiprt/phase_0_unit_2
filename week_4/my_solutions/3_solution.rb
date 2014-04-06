@@ -1,8 +1,7 @@
-
 # U2.W4: 3_solution
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge [by myself].
 
 # 2. Pseudocode
 
