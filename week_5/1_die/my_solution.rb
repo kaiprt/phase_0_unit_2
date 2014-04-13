@@ -41,10 +41,8 @@ end
 # 4. Refactored Solution
 class Die
   def initialize(sides)
-    if sides < 1
-      raise ArgumentError.new("Only numbers >= 1 are allowed")
-    else
-    @sidesv = sides
+    if sides < 1 ; raise ArgumentError.new("Only numbers >= 1 are allowed")
+    else ; @sidesv = sides 
     end
   end
   
