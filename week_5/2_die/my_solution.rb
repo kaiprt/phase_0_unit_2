@@ -1,7 +1,7 @@
 # U2.W5: Die Class 2: Arbitrary Symbols
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself
 
 # 2. Pseudocode
 
@@ -39,15 +39,11 @@ end
 
 
 # 4. Refactored Solution
-
-
-
+# I believe the code I have written above can not be simplified without changing the structure.
 
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-
-
 
 
 

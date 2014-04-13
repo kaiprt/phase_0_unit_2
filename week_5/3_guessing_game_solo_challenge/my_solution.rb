@@ -63,10 +63,19 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-
+print game = GuessingGame.new(20)
+print game.guess(10) == :low
+print game.guess(21) == :high
+print game.guess(20) == :correct
+print game.solved? == true
 
 
 
 
 
 # 5. Reflection 
+=begin 
+I found this solo challenge to fair. I figured out a solution and I only researched syntax for symbols and what they
+are used for. I enjoyed this challenge and my strategy was to use if/return else/return and I through an unless in the
+solved method to shorten the code a little. I felt confident attempting this challenge.
+=end

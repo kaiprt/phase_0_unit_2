@@ -1,7 +1,7 @@
 # U2.W5: Die Class 1: Numeric
 
 
-# I worked on this challenge [by myself, with: ].
+# I worked on this challenge by myself.
 
 # 2. Pseudocode
 
@@ -57,9 +57,16 @@ class Die
 end
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
+print my_die = Die.new(6)
+print my_die.sides == 6
+print my_die.roll != 7
+print my_die.roll == 1 or 2 or 3 or 4 or 5 or 6
 
 
-
-
-
-# 5. Reflection 
+# 5. Reflection
+=begin
+I decided to go with an if/else statement decide whether or not to raise an ArgumentError. When defining the last two methods I
+chose to reference code I had already written in initialize in order to save space. This challenge was a good warm up and I did
+not have any trouble solving this. It helped me solidify my knowledge and I felt the directions were well written. I feel very
+confident with this subject.
+=end

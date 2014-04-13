@@ -68,13 +68,17 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-=begin
-p @card.length == 16
-p CreditCard .new(4408041234567893) == true
-p CreditCard .new(dsklajdf) == false
-=end
 
+p valid = CreditCard.new(4408041234567893) == true
+p valid.check_card == true
+p invalid = CreditCard.new('dsklajdf') == false
+p invalid.check_card == false
 
 
 
 # 5. Reflection 
+=begin
+I had trouble with this challenge. I still am getting one failure when testing as well. I felt that the directions weren't very specific.
+I feel comfortable with the learning objectives but not this challenge. I will continue to work on this until I get a correct solution and
+will update the file.
+=end
