@@ -65,6 +65,7 @@ puts get_row(boggle_board, 1) == ["i", "o", "d", "t"]
 2. Have board map out its columns (col)
 =end
 # Initial Solution
+=begin 
   def get_col(board, col)
     output = []
       board.each do |x|
@@ -72,6 +73,7 @@ puts get_row(boggle_board, 1) == ["i", "o", "d", "t"]
       end
     puts output.inspect
   end
+=end
 # Refactored Solution
   def get_col(board, col)
     board.map {|i| i[col]}
@@ -85,3 +87,4 @@ I felt that this section was a little harder compared to get_row solution. I use
 skills to find a reasonable initial solution and then a "completely over-hauled" refactored
 solution. Overall this was one of my favorite challenge set ups and I finished it within a 
 reasonable time frame.
+=end

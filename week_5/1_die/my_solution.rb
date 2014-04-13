@@ -19,6 +19,7 @@
 
 
 # 3. Initial Solution
+=begin
 class Die
   def initialize(sides)
     if sides < 1
@@ -37,7 +38,7 @@ class Die
     return @rollv.to_i
   end
 end
-
+=end
 # 4. Refactored Solution
 class Die
   def initialize(sides)

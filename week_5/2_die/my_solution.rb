@@ -28,7 +28,7 @@ class Die
   end
 
   def sides
-    return @labels.size
+    return @sides = @labels.size.to_i
   end
 
   def roll
@@ -44,8 +44,15 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-
-
+print die = Die.new(["A","B","C"])
+print die.sides == 3
+print die.roll == "A" or "B" or "C"
 
 
 # 5. Reflection 
+=begin
+This challeng was similiar to the first challenge except it dealt with strings instead
+of integers. It was fairly easy and I felt that I understand implementing basic Ruby
+class and writing instance variables, using if else statements, and using built in ruby
+methods.
+=end
