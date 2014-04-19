@@ -5,6 +5,7 @@
 
 
 # Original Solution
+=begin
 class CreditCard
   def initialize(card) # Will initialize if there is a total of 16 integers.
     if card.integer? == true and card.to_s.length == 16
@@ -42,6 +43,7 @@ class CreditCard
   end
 
 end
+=end 
 # Refactored Solution
 class CreditCard
 	def initialize(card) # Removed if else statement because it was not necessary.
@@ -76,14 +78,15 @@ def assert
 end
 
 valid = CreditCard.new(4408041234567893)
-assert { valid.check_card }
-assert { valid.sum == }
+assert { valid.check_card == true }
+assert { valid.sum ==  }
 
 p invalid = CreditCard.new('dsklajdf') == false
 p invalid.check_card == false
-
-
-
-
-
 # Reflection 
+=begin
+I felt it hard to refactor this equation without completely re-writing the methods/code.
+I did what I could with what I had but after researching I realize I could have wrote the
+code in a cleaner fashion. I feel that I understand refactoring and I feel comfortable
+explaining what the code is doing.
+=end 
