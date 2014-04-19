@@ -35,7 +35,7 @@
 
 
 # 3. Initial Solution
-
+=begin
 class PezDispenser
   def initialize(flavors)
     @flavors = flavors
@@ -66,12 +66,41 @@ class PezDispenser
   end
 end
  
-
+=end
 
 # 4. Refactored Solution
 
+class PezDispenser
+  def initialize(flavors)
+    @flavors = flavors
+    @inventory = []
+    @inventory << @flavors #=> inventory[0] = all flavors (created multi-dimensional array)
+    return "A new pez dispenser has been created. You have #{@pez_count} pez!"
+  end
 
+  def pez_count
+    @count = @inventory[0].length
+    return "There are #{@count} pieces remaining."
+  end
 
+  def see_all_pez
+    contents = @inventory[0]
+    return contents
+  end
+
+  def get_pez
+    puts "Oh look you got a #{@inventory[0].last} pez!"
+    @inventory[0].pop
+    return "Pez was dispensed."
+  end
+
+  def add_pez(flavor)
+    @inventory[0] << flavor
+    return "A #{flavor} flavored pez was added."
+  end
+end
+
+#I felt that I could not refactor the code any more than what it is. I apologize if I missed something. Feedback is welcomed!
 
 
 
@@ -94,6 +123,12 @@ puts "Now you have #{super_mario.pez_count} pez!"
 #Assert Statements
 my_flavors = %w(orange cherry oregano pizza)
 my_test = PezDispenser.new(my_flavors)
-assert {my_test.pez_count == }
-
-# 5. Reflection 
+assert { my_test.pez_count == "There are 4 pieces remaining." }
+assert { my_test.get_pez == "Pez was dispensed." }
+assert { my_test.pez_count == "There are 3 pieces remaining." }
+# 5. Reflection
+=begin
+ I enjoyed this challenge a lot! It was fun looking at user statements and converting them into driver code and then building my
+ program. I also enjoy challenges like this one where we create a program to simulate a real world object. It makes learning much
+ easier and fun! I now fully understand assert statements and I feel like my brain is becoming more logic oriented!
+=end
